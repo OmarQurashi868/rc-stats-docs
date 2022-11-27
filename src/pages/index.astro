@@ -1,0 +1,86 @@
+---
+import Layout from "../layouts/Layout.astro";
+const botInviteLink =
+  "https://discord.com/api/oauth2/authorize?client_id=1032693370348371979&permissions=274878171136&scope=bot%20applications.commands";
+---
+
+<Layout title="RC Stats Bot">
+  <main class="flex flex-col items-center gap-8 text-lg mt-10">
+    <h1 class="self-start text-5xl">
+      Welcome to <span class="text-accent">RC Stats Bot</span>
+    </h1>
+    <p class="text-justify">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Penatibus et magnis
+      dis parturient montes nascetur ridiculus mus. Ut tristique et egestas quis
+      ipsum suspendisse. Velit sed ullamcorper morbi tincidunt ornare massa eget
+      egestas purus. Tempus iaculis urna id volutpat. Scelerisque eleifend donec
+      pretium vulputate.
+    </p>
+    <a
+      href={botInviteLink}
+      class="bg-accent text-white hover:bg-[#b3133d] transition-all rounded-md p-2 text-xl font-bold shadow-lg w-full sm:w-1/2 flex flex-row justify-center items-center gap-2"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Invite to your server<svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="w-6 h-6"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+        ></path>
+      </svg>
+    </a>
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: auto;
+    padding: 1.5rem;
+    max-width: 80ch;
+  }
+  h1 {
+    font-weight: 800;
+    margin: 0;
+  }
+  .text-gradient {
+    background-image: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400%;
+    background-position: 0%;
+  }
+  .instructions {
+    line-height: 1.6;
+    margin: 1rem 0;
+    border: 1px solid rgba(var(--accent), 25%);
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.4rem;
+  }
+  .instructions code {
+    font-size: 0.875em;
+    font-weight: bold;
+    background: rgba(var(--accent), 12%);
+    color: rgb(var(--accent));
+    border-radius: 4px;
+    padding: 0.3em 0.45em;
+  }
+  .instructions strong {
+    color: rgb(var(--accent));
+  }
+  .link-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+    gap: 1rem;
+    padding: 0;
+  }
+</style>

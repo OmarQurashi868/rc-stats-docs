@@ -1,0 +1,46 @@
+---
+const discordServerLink = "https://discord.gg/Jymjc5Dcfb";
+---
+
+<div
+  class="fixed top-0 left-0 bg-[#212529] w-full h-12 flex items-center justify-between px-4 text-gray-300 text-sm shadow-lg"
+>
+  <!-- PC menu -->
+  <div class="hidden sm:flex items-center gap-4">
+    <a
+      href="/"
+      class="flex flex-row items-center gap-2 hover:text-white transition-all"
+    >
+      <img src="/logo.png" class="w-8 rounded-lg" />
+      <div>RC Stat Bot</div>
+    </a>
+    <a href="changelog" class="hover:text-white transition-all">Changelog</a>
+    <a href="docs" class="hover:text-white transition-all">Documentation</a>
+    <a href="about" class="hover:text-white transition-all">About the project</a
+    >
+  </div>
+  <div class="hidden sm:block">
+    <a href={discordServerLink} target="_blank" rel="noopener noreferrer"
+      ><img src="/icon_clyde_white_RGB.svg" class="w-8" />
+    </a>
+  </div>
+  <!-- Mobile menu -->
+  <a
+    href="/"
+    class="sm:hidden flex-row items-center gap-2 hover:text-white transition-all"
+  >
+    <img src="/logo.png" class="w-8 rounded-lg" />
+  </a>
+
+  <div
+    class="sm:hidden fixed w-full top-12 left-0 px-4 flex flex-col text-lg gap-8 mt-8 z-50 items-center bg-black"
+  >
+    <a href="changelog" class="hover:text-white transition-all">Changelog</a>
+    <a href="docs" class="hover:text-white transition-all">Documentation</a>
+    <a href="about" class="hover:text-white transition-all">About the project</a
+    >
+    <a href={discordServerLink} target="_blank" rel="noopener noreferrer" class="flex flex-row gap-2"
+      >Support server<img src="/icon_clyde_white_RGB.svg" class="w-8" />
+    </a>
+  </div>
+</div>
