@@ -5,6 +5,13 @@ import Layout from "../layouts/Layout.astro";
 <Layout title="About the project">
 ABOUT THE PROJECT
 
+<style>
+ProjectItem {
+  align-items: flex-start;
+}
+
+</style>
+
 <div style="display: grid; grid-template-columns: repeat(2, 1fr); grid-gap: 1rem;">
     <div style="background-color: #FF1653; border-radius: 10px; padding: 1rem; border-color: white; text-align: center; margin-left: 15px;">
       Coming in v2.0.0
@@ -13,5 +20,20 @@ ABOUT THE PROJECT
       Already finished
     </div>
   </div>
+<!-- add one single row, but stretch it down -->
 
+<div style="display: grid; grid-template-columns: repeat(2, 1fr); grid-gap: 1rem; margin-top: 10px; ">
+  <div style="border-radius: 10px; padding: 1rem; border-color: white; text-align: center; margin-left: 15px;border-color: #414141; border-width: 2px;">
+    Coming in v2.0.0
+  </div>
+  <div style="border-radius: 10px; padding: 1rem; border-color: white; text-align: center;border-color: #414141; border-width: 2px; margin-right: 15px;">
+    <ul>
+      <li class="ProjectItem">Stat command</li>
+      <li class="ProjectItem">Info command</li>
+    </ul>
+  </div>
+</div>
+
+<iframe src="https://schwartzadev.github.io/github-widget/?user=Red5Gaming&repo=RC_STAT_BOT" height="200" style="margin-left: 10px;"></iframe>
+  
 </Layout>
